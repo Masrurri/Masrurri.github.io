@@ -3,24 +3,38 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Moner</title>
-<style>
-  :root { --ink: #111214; --muted: #5b5f66; --bg: #ffffff; }
-  @media (prefers-color-scheme: dark) { :root { --ink: #ececee; --muted: #a2a6ad; --bg: #121315; } }
-  body { margin: 0; background: var(--bg); color: var(--ink); font: 16px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
-  main { max-width: 720px; margin: 0 auto; padding: 48px 16px; }
-  h1 { font-size: 36px; margin: 0 0 8px; }
-  .muted { color: var(--muted); }
-</style>
+<title>Masrurri · Apps</title>
+<meta name="description" content="Apps by Masrurri.">
+<link rel="icon" href="moner/assets/icon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600&family=Space+Mono&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
 <main>
-<h1>Moner</h1>
-<p class="muted">A personal spending tracker for Android.</p>
-<p>Record what you spend, set a monthly limit and see what's left. Moner can also find payment receipts from banks,
-e-wallets and QRIS in your Gmail (read-only, processed on your phone), scan printed receipts with the camera, and split a bill
-between friends. Your data stays on your phone: there is no account and no server.</p>
-<p><a href="privacy.html">Privacy Policy</a> · Contact: <a href="mailto:alviyantoruri@gmail.com">alviyantoruri@gmail.com</a></p>
+  <!-- One card per app; each app lives in its own folder (/moner/, ...) with its home, privacy and terms pages. -->
+  <section class="card intro">
+    <h1>Apps by Masrurri</h1>
+    <p class="muted" style="margin-top:8px">Small, calm apps that keep your data on your phone.</p>
+  </section>
+
+  <div class="label">Apps</div>
+  <section class="card">
+    <a class="row" href="moner/" style="padding:0;text-decoration:none">
+      <span class="app-icon lg"><img src="moner/assets/icon.svg" alt="Moner icon"></span>
+      <div><h2>Moner</h2>
+        <p>A spending tracker for Android. Add a payment in seconds, bring in receipts from Gmail, scan a paper one, or split a
+          bill. Your data stays on your phone.</p></div>
+    </a>
+    <p class="muted" style="margin:14px 0 0;font-size:14px">
+      <a href="moner/">About Moner</a> · <a href="moner/privacy.html">Privacy Policy</a> · <a href="moner/terms.html">Terms of Service</a>
+    </p>
+  </section>
+
+  <footer>
+    <span>Contact: <a href="mailto:alviyantoruri@gmail.com">alviyantoruri@gmail.com</a></span>
+  </footer>
 </main>
 </body>
 </html>

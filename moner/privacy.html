@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Moner Privacy Policy</title>
+<meta name="description" content="What data Moner uses, where it goes, and the choices you have. Your spending data stays on your phone.">
+<link rel="icon" href="assets/icon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600&family=Space+Mono&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+<main class="doc">
+  <header class="top">
+    <a class="brand" href="./"><span class="app-icon sm"><img src="assets/icon.svg" alt=""></span>Moner</a>
+    <nav aria-label="Moner pages">
+      <a href="./">Home</a>
+      <a href="privacy.html" aria-current="page">Privacy</a>
+      <a href="terms.html">Terms</a>
+    </nav>
+  </header>
+
+  <section class="card">
+    <h1>Privacy Policy</h1>
+    <div class="label" style="margin:6px 0 0">Effective 7 November 2026</div>
+    <div class="summary">
+      <p>Moner ("the app") is a personal spending tracker for Android. In short: your spending data stays on your phone.
+        Moner has no server and no account, and the developer never receives your data. Gmail is read only to find payment
+        receipts, on your phone. A receipt photo leaves your phone only if you turn on AI reading.</p>
+    </div>
+  </section>
+
+  <section class="dotted">
+    <span class="well"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12,3.5 L19,6v5.5c0,4.2 -2.9,7.6 -7,9 -4.1,-1.4 -7,-4.8 -7,-9V6zM9,12l2,2 4,-4" stroke-width="1.9"/></svg></span>
+    <div><h3>Everything stays on this phone</h3>
+      <p>No account, no server, no ads, no analytics.</p></div>
+  </section>
+
+  <section class="card">
+    <h2>1. Data stored on your phone</h2>
+    <ul>
+      <li><strong>Payments you record</strong>: what it was for, amount, category, date and time, how you paid, and notes.</li>
+      <li><strong>Receipts found in Gmail</strong> (only if you connect Gmail): merchant or recipient, amount, date and time,
+        payment method, bank or app, and reference number.</li>
+      <li><strong>Quick actions</strong>: payments you chose to save for one-tap reuse.</li>
+      <li><strong>Profile and settings</strong>: the name and optional photo you set, your monthly limit, week start, appearance
+        and other settings.</li>
+      <li><strong>A short activity log</strong> of what the app did (for example, receipts recorded or payments edited), kept
+        on the phone.</li>
+    </ul>
+    <p>This data is kept in the app's private storage on your device. It is not sent to the developer or to any server run by
+      the developer. If Android device backup is on, Android may include it in your own Google backup; you can turn that off in
+      Android settings. Uninstalling the app, or Delete everything in Moner's Settings, deletes it.</p>
+  </section>
+
+  <section class="card">
+    <h2>2. Gmail (optional)</h2>
+    <p>If you choose Connect Gmail, Moner asks Google for read-only access to your Gmail
+      (<code>https://www.googleapis.com/auth/gmail.readonly</code>). Moner uses this access only to:</p>
+    <ul>
+      <li>search your mailbox for payment receipts from banks, e-wallets, QRIS, and ride or delivery services; and</li>
+      <li>read those receipt emails on your phone to fill in the amount, merchant, date and payment method.</li>
+    </ul>
+    <p>While Gmail is connected, Moner checks for new receipts when you open Home, the first time you open Receipts, and when
+      you tap Fetch now. It does not check in the background.</p>
+    <p>Moner does not send, delete, modify or label any email. Email content is processed only on your device. It is never
+      sent to the developer, never sent to any AI service, never used for advertising, and never shared with or sold to anyone.
+      Only the receipt details listed in section 1 are kept, in the app on your phone. You can disconnect Gmail at any time in
+      Moner's Settings, which removes the access; you can also remove it at
+      <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>.</p>
+    <p class="important">Moner's use and transfer of information received from Google APIs to any other app will adhere to the
+      <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>,
+      including the Limited Use requirements.</p>
+  </section>
+
+  <section class="card">
+    <h2>3. Camera and photos</h2>
+    <p>Moner uses the camera, or a photo you pick from your gallery, only when you scan a receipt or split a bill. By default
+      the photo is read on your phone with Google ML Kit (on-device text recognition) and is not kept after reading.</p>
+  </section>
+
+  <section class="card">
+    <h2>4. AI receipt reading (optional, off by default)</h2>
+    <p>If you turn on Read receipts with AI in Settings (you are asked to agree first), the photo of a receipt you scan or split
+      is sent to Google's Gemini model through Google Firebase AI Logic so it can be read more accurately. Only that photo is
+      sent: no Gmail content, no payment history and no profile data.</p>
+    <p>Google processes it under the <a href="https://ai.google.dev/gemini-api/terms">Gemini API Additional Terms</a> and the
+      <a href="https://policies.google.com/privacy">Google Privacy Policy</a>. On Gemini's free tier Google may use what is
+      sent to improve its products, so avoid scanning receipts that show card numbers or personal details. You can turn AI
+      reading off at any time; scans then stay on your phone. If AI reading fails or you are offline, the on-device reader is
+      used instead.</p>
+  </section>
+
+  <section class="card">
+    <h2>5. App integrity</h2>
+    <p>To stop others misusing the AI service, the app uses Google Firebase App Check with Google Play Integrity. When AI reading
+      is used, it sends a device and app integrity check to Google. This check does not include your spending, receipts or
+      Gmail data.</p>
+  </section>
+
+  <section class="card">
+    <h2>6. Sharing and exporting</h2>
+    <p>Nothing is shared unless you do it. A Split bill summary is drawn as an image on your phone and passed only to the app
+      you choose in Android's share sheet. Export my data creates a CSV file that you save where you choose.</p>
+  </section>
+
+  <section class="card">
+    <h2>7. What Moner does not do</h2>
+    <ul>
+      <li>No advertising, analytics or tracking SDKs.</li>
+      <li>No selling or sharing of your data, and no use of it for advertising, profiling or credit decisions.</li>
+      <li>No account with the developer, and no developer server.</li>
+    </ul>
+  </section>
+
+  <section class="card">
+    <h2>8. Your choices</h2>
+    <ul>
+      <li>Disconnect Gmail in Settings at any time.</li>
+      <li>Turn AI reading on or off in Settings.</li>
+      <li>Export your data as CSV, or delete everything, from Settings › About.</li>
+      <li>Uninstall the app to remove all of its data from your phone.</li>
+    </ul>
+  </section>
+
+  <section class="card">
+    <h2>9. Children</h2>
+    <p>Moner is not directed at children under 13 and does not knowingly collect their data.</p>
+  </section>
+
+  <section class="card">
+    <h2>10. This website</h2>
+    <p>These pages are hosted on GitHub Pages and load fonts from Google Fonts, so GitHub and Google may receive your IP address
+      when you visit, under their own privacy policies. The site sets no cookies and uses no analytics.</p>
+  </section>
+
+  <section class="card">
+    <h2>11. Changes</h2>
+    <p>If this policy changes, the new version will be posted on this page with a new effective date. Material changes will
+      also be noted in the app's release notes.</p>
+  </section>
+
+  <section class="card">
+    <h2>12. Contact</h2>
+    <p>Questions or requests: <a href="mailto:alviyantoruri@gmail.com">alviyantoruri@gmail.com</a></p>
+  </section>
+
+  <footer>
+    <span>© 2026 Moner</span>
+    <a href="./">Home</a>
+    <a href="terms.html">Terms of Service</a>
+    <a href="../">More apps</a>
+  </footer>
+</main>
+</body>
+</html>
